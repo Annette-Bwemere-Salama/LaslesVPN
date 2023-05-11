@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
 						initial-scale=1.0">
-    <title>Setup Tailwind-CSS with Vite</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="./css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="font-sans">
     <div class="bg-white">
         <header>
-            <div class="grid grid-cols-3">
+            <div class="md:grid md:grid-cols-3">
                 <div class=" flex justify-center ">
-                    <img src="./img/lo-removebg-preview.png" alt="logo" class="object-cover object-center h-20 w-32" />
+                    <img src="./img/lo-removebg-preview.png" alt="logo"
+                        class="object-cover object-left md:object-center h-20 w-32" />
                 </div>
-                <div class="lg:flex lg:justify-around sm:hidden">
+                <div class="lg:flex lg:justify-around hidden">
                     <p>About</p>
                     <p>Features</p>
                     <p>Princing</p>
                     <p>Testimonial</p>
                     <p>help</p>
                 </div>
-                <div class="lg:flex lg:justify-evenly sm:hidden md:hidden">
+                <div class="hidden lg:flex lg:justify-evenly  md:hidden">
                     <div>
                         <p>Sign in</p>
                     </div>
                     <div>
                         <p>Sign Up</p>
                     </div>
+                </div>
+                <div class="icon text-right">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
         </header>
