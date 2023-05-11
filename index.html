@@ -9,36 +9,136 @@
     <link rel="stylesheet" href="./css/tailwind.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<!-- component -->
+<!-- component -->
 
-<body class="font-sans">
-    <div class="bg-white">
-        <header>
-            <div class="md:grid md:grid-cols-3">
-                <div class=" flex justify-center ">
-                    <img src="./img/lo-removebg-preview.png" alt="logo"
-                        class="object-cover object-left md:object-center h-20 w-32" />
+<body class="bg-blue-500 font-mono">
+    <nav class="relative px-8 py-8 flex justify-around items-center bg-white">
+        <a class="text-3xl font-bold leading-none" href="#">
+            <img alt="logo" src="./img/l-removebg-preview.png" class="block h-16 w-16" />
+        </a>
+        <div class="lg:hidden">
+            <button class="navbar-burger flex items-center text-[#F53855] p-3">
+                <div class="block h-5 w-5 ">
+
+                    <i class="fa fa-bars "></i>
                 </div>
-                <div class="lg:flex lg:justify-around hidden">
-                    <p>About</p>
-                    <p>Features</p>
-                    <p>Princing</p>
-                    <p>Testimonial</p>
-                    <p>help</p>
-                </div>
-                <div class="hidden lg:flex lg:justify-evenly  md:hidden">
-                    <div>
-                        <p>Sign in</p>
-                    </div>
-                    <div>
-                        <p>Sign Up</p>
-                    </div>
-                </div>
-                <div class="icon text-right">
-                    <i class="fa fa-bars"></i>
-                </div>
+            </button>
+        </div>
+        <ul
+            class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <li><a class=" text-xl text-[#4F5665] hover:text-gray-500" href="#">About</a></li>
+
+            <li><a class="text-xl text-[#F53855] font-bold" href="#">Features</a></li>
+
+            <li><a class="text-xl text-[#4F5665] hover:text-gray-500" href="#">Precing</a></li>
+
+            <li><a class="text-xl text-[#4F5665] hover:text-gray-500" href="#">Testimonials</a></li>
+
+            <li><a class="text-xl text-[#4F5665] hover:text-gray-500" href="#">Help</a></li>
+        </ul>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6  text-xl text-gray-900 font-bold hover:bg-[#F53855] hover:text-white hover:border-red-100 hover:border-4  rounded-2xl transition duration-200"
+            href="#">Sign In</a>
+        <a class="hidden lg:inline-block py-2 px-6 bg-white hover:bg-[#F53855] text-xl text-black font-bold rounded-2xl transition duration-200 hover:text-white border-[#F53855] hover:border-red-100 border-4"
+            href="#">Sign up</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+        <nav
+            class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="#">
+                    <img alt="logo" src="./img/l-removebg-preview.png" class="block h-16 w-16" />
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-[#4F5665] cursor-pointer hover:text-gray-500"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                        </path>
+                    </svg>
+                </button>
             </div>
-        </header>
+            <div>
+                <ul>
+                    <li class="mb-1">
+                        <a class="block p-4 text-xl font-semibold text-[#4F5665] hover:bg-blue-50 hover:text-[#F53855] rounded"
+                            href="#">About</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-xl font-semibold text-[#4F5665] hover:bg-blue-50 hover:text-[#F53855] rounded"
+                            href="#">Features</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-xl font-semibold text-[#4F5665] hover:bg-blue-50 hover:text-[#F53855] rounded"
+                            href="#">Precing</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-xl font-semibold text-[#4F5665] hover:bg-blue-50 hover:text-[#F53855] rounded"
+                            href="#">Testimonials </a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-xl font-semibold text-[#4F5665] hover:bg-blue-50 hover:text-[#F53855] rounded"
+                            href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6">
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold  bg-gray-50 rounded-2xl hover:bg-[#F53855] hover:text-white "
+                        href="#">Sign in</a>
+                    <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-black font-semibold hover:bg-[#F53855] border-[#F53855] hover:border-red-100 border-4 hover:text-white  rounded-2xl"
+                        href="#">Sign Up</a>
+                </div>
+                <p class="my-4 text-xs text-center text-[#4F5665]">
+                    <span>Copyright © 2023 Annette</span>
+                </p>
+            </div>
+        </nav>
     </div>
 </body>
 
-</html>
+<script>
+    // Burger menus
+    document.addEventListener('DOMContentLoaded', function () {
+        // open
+        const burger = document.querySelectorAll('.navbar-burger');
+        const menu = document.querySelectorAll('.navbar-menu');
+
+        if (burger.length && menu.length) {
+            for (var i = 0; i < burger.length; i++) {
+                burger[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        // close
+        const close = document.querySelectorAll('.navbar-close');
+        const backdrop = document.querySelectorAll('.navbar-backdrop');
+
+        if (close.length) {
+            for (var i = 0; i < close.length; i++) {
+                close[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+
+        if (backdrop.length) {
+            for (var i = 0; i < backdrop.length; i++) {
+                backdrop[i].addEventListener('click', function () {
+                    for (var j = 0; j < menu.length; j++) {
+                        menu[j].classList.toggle('hidden');
+                    }
+                });
+            }
+        }
+    });
+
+
+
+</script>
