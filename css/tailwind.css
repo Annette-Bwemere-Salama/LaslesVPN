@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
+.icons{
+    font-size:20px;color:#2FAB73
+}
 @tailwind utilities;
